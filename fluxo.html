@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxograma | Guia Profissional de Desenvolvimento Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img src="assets/logo.svg" alt="Logo Guia Web" class="logo-img">
+            </div>
+            <button class="theme-toggle" aria-label="Alternar tema">
+                <svg class="theme-icon" viewBox="0 0 24 24"></svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="tecnologias.html">Tecnologias</a></li>
+                <li><a href="boas-praticas.html">Boas Práticas</a></li>
+                <li><a href="fluxo.html" class="active">Fluxograma</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="flow-intro">
+            <h1>Fluxograma de Desenvolvimento</h1>
+            <p>Entenda o processo completo de desenvolvimento de um projeto web, da ideia ao deploy.</p>
+        </section>
+
+        <section class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>1. Planejamento</h3>
+                    <ul>
+                        <li>Definição de requisitos</li>
+                        <li>Análise de viabilidade</li>
+                        <li>Escolha de tecnologias</li>
+                        <li>Estimativas de tempo</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>2. Design</h3>
+                    <ul>
+                        <li>Wireframes</li>
+                        <li>Protótipos</li>
+                        <li>Design System</li>
+                        <li>UI/UX</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>3. Desenvolvimento</h3>
+                    <ul>
+                        <li>Setup do projeto</li>
+                        <li>Implementação front-end</li>
+                        <li>Implementação back-end</li>
+                        <li>Integração de APIs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>4. Testes</h3>
+                    <ul>
+                        <li>Testes unitários</li>
+                        <li>Testes de integração</li>
+                        <li>Testes de usabilidade</li>
+                        <li>QA</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>5. Deploy</h3>
+                    <ul>
+                        <li>Configuração de ambiente</li>
+                        <li>CI/CD</li>
+                        <li>Monitoramento</li>
+                        <li>Backup strategy</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>6. Manutenção</h3>
+                    <ul>
+                        <li>Atualizações</li>
+                        <li>Correções de bugs</li>
+                        <li>Otimizações</li>
+                        <li>Backups</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="flow-diagram">
+            <h2>Diagrama Interativo</h2>
+            <div class="diagram-container">
+                <object data="assets/fluxograma.svg" type="image/svg+xml" id="flow-svg">
+                    Seu navegador não suporta SVG
+                </object>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Guia Web. Projeto educacional.</p>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

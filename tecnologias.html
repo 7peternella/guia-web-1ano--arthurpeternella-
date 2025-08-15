@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologias Web | Guia Profissional de Desenvolvimento Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img src="assets/logo.svg" alt="Logo Guia Web" class="logo-img">
+            </div>
+            <button class="theme-toggle" aria-label="Alternar tema">
+                <svg class="theme-icon" viewBox="0 0 24 24"></svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="tecnologias.html" class="active">Tecnologias</a></li>
+                <li><a href="boas-praticas.html">Boas Práticas</a></li>
+                <li><a href="fluxo.html">Fluxograma</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="tech-intro">
+            <h1>Tecnologias Web</h1>
+            <p>Conheça as principais tecnologias utilizadas no desenvolvimento web moderno.</p>
+            
+            <div class="tech-filters">
+                <input type="text" id="tech-search" placeholder="Buscar tecnologia..." class="search-input">
+                <div class="filter-buttons">
+                    <button data-filter="all" class="filter-btn active">Todas</button>
+                    <button data-filter="frontend" class="filter-btn">Front-end</button>
+                    <button data-filter="backend" class="filter-btn">Back-end</button>
+                    <button data-filter="database" class="filter-btn">Banco de Dados</button>
+                    <button data-filter="devops" class="filter-btn">DevOps</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-grid">
+            <!-- Front-end -->
+            <article class="tech-card" data-category="frontend">
+                <h3>HTML5</h3>
+                <p>Linguagem de marcação para estruturar e apresentar conteúdo na web.</p>
+                <ul class="tech-features">
+                    <li>Elementos semânticos</li>
+                    <li>Forms avançados</li>
+                    <li>API's modernas</li>
+                </ul>
+            </article>
+
+            <article class="tech-card" data-category="frontend">
+                <h3>CSS3</h3>
+                <p>Linguagem de estilização para design e layout de páginas web.</p>
+                <ul class="tech-features">
+                    <li>Flexbox e Grid</li>
+                    <li>Animações</li>
+                    <li>Media Queries</li>
+                </ul>
+            </article>
+
+            <article class="tech-card" data-category="frontend">
+                <h3>JavaScript</h3>
+                <p>Linguagem de programação para interatividade e funcionalidades dinâmicas.</p>
+                <ul class="tech-features">
+                    <li>ES6+ features</li>
+                    <li>DOM manipulation</li>
+                    <li>Async/Await</li>
+                </ul>
+            </article>
+
+            <!-- Back-end -->
+            <article class="tech-card" data-category="backend">
+                <h3>Node.js</h3>
+                <p>Runtime JavaScript para construção de aplicações servidor.</p>
+                <ul class="tech-features">
+                    <li>Event-driven</li>
+                    <li>Non-blocking I/O</li>
+                    <li>npm ecosystem</li>
+                </ul>
+            </article>
+
+            <!-- Databases -->
+            <article class="tech-card" data-category="database">
+                <h3>MySQL</h3>
+                <p>Sistema de gerenciamento de banco de dados relacional.</p>
+                <ul class="tech-features">
+                    <li>ACID compliance</li>
+                    <li>Indexação</li>
+                    <li>Stored procedures</li>
+                </ul>
+            </article>
+
+            <!-- DevOps -->
+            <article class="tech-card" data-category="devops">
+                <h3>Git</h3>
+                <p>Sistema de controle de versão distribuído.</p>
+                <ul class="tech-features">
+                    <li>Branching</li>
+                    <li>Merging</li>
+                    <li>Collaboration</li>
+                </ul>
+            </article>
+        </section>
+
+        <button id="export-btn" class="btn">Exportar para CSV</button>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Guia Web. Projeto educacional.</p>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

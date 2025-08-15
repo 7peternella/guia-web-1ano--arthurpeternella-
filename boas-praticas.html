@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boas Práticas | Guia Profissional de Desenvolvimento Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img src="assets/logo.svg" alt="Logo Guia Web" class="logo-img">
+            </div>
+            <button class="theme-toggle" aria-label="Alternar tema">
+                <svg class="theme-icon" viewBox="0 0 24 24"></svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="tecnologias.html">Tecnologias</a></li>
+                <li><a href="boas-praticas.html" class="active">Boas Práticas</a></li>
+                <li><a href="fluxo.html">Fluxograma</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="practices-intro">
+            <h1>Boas Práticas de Desenvolvimento</h1>
+            <p>Conheça as melhores práticas profissionais para desenvolvimento web de qualidade.</p>
+        </section>
+
+        <section class="practices-content">
+            <div class="accordion">
+                <!-- Acessibilidade -->
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <h2>Acessibilidade</h2>
+                        <span class="accordion-icon">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="checklist">
+                            <label class="checklist-item">
+                                <input type="checkbox" name="a11y" value="landmarks">
+                                Usar landmarks semânticos (header, nav, main, footer)
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" name="a11y" value="alt">
+                                Fornecer textos alternativos para imagens
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" name="a11y" value="contrast">
+                                Garantir contraste adequado de cores
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Semântica -->
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <h2>Semântica HTML</h2>
+                        <span class="accordion-icon">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="checklist">
+                            <label class="checklist-item">
+                                <input type="checkbox" name="semantic" value="headings">
+                                Estrutura adequada de headings (h1-h6)
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" name="semantic" value="elements">
+                                Uso apropriado de elementos semânticos
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" name="semantic" value="forms">
+                                Labels e fieldsets em formulários
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Responsividade -->
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <h2>Design Responsivo</h2>
+                        <span class="accordion-icon">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="checklist">
+                            <label class="checklist-item">
+                                <input type="checkbox" name="responsive" value="mobile">
+                                Abordagem Mobile-First
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" name="responsive" value="breakpoints">
+                                Breakpoints apropriados
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" name="responsive" value="images">
+                                Imagens responsivas com srcset
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Performance -->
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <h2>Performance</h2>
+                        <span class="accordion-icon">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="checklist">
+                            <label class="checklist-item">
+                                <input type="checkbox" name="performance" value="images">
+                                Otimização de imagens
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" name="performance" value="minify">
+                                Minificação de assets
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" name="performance" value="lazy">
+                                Lazy loading de imagens
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="progress-section">
+            <h2>Seu Progresso</h2>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 0%"></div>
+            </div>
+            <p class="progress-text">0% completo</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Guia Web. Projeto educacional.</p>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="50" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .logo-text { font-family: 'Poppins', sans-serif; font-weight: 600; }
+        .accent { fill: #2563EB; }
+        @media (prefers-color-scheme: dark) {
+            .logo-text { fill: #F9FAFB; }
+        }
+    </style>
+    <text x="10" y="35" class="logo-text" font-size="24">Guia<tspan class="accent">Web</tspan></text>
+</svg>

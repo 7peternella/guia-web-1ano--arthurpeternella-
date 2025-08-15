@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz | Guia Profissional de Desenvolvimento Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img src="assets/logo.svg" alt="Logo Guia Web" class="logo-img">
+            </div>
+            <button class="theme-toggle" aria-label="Alternar tema">
+                <svg class="theme-icon" viewBox="0 0 24 24"></svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="tecnologias.html">Tecnologias</a></li>
+                <li><a href="boas-praticas.html">Boas Práticas</a></li>
+                <li><a href="fluxo.html">Fluxograma</a></li>
+                <li><a href="quiz.html" class="active">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="quiz-intro">
+            <h1>Quiz de Desenvolvimento Web</h1>
+            <p>Teste seus conhecimentos sobre desenvolvimento web profissional.</p>
+            <button id="start-quiz" class="btn">Começar Quiz</button>
+        </section>
+
+        <section id="quiz-container" class="quiz-container" style="display: none;">
+            <div class="quiz-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <p class="question-counter">Questão <span id="current-question">1</span> de <span id="total-questions">10</span></p>
+            </div>
+
+            <div class="question-container">
+                <h2 id="question-text">Carregando questão...</h2>
+                <div id="options-container" class="options-container">
+                    <!-- Options will be inserted here via JavaScript -->
+                </div>
+            </div>
+
+            <div class="quiz-controls">
+                <button id="prev-question" class="btn" disabled>Anterior</button>
+                <button id="next-question" class="btn" disabled>Próxima</button>
+                <button id="submit-quiz" class="btn" style="display: none;">Finalizar</button>
+            </div>
+        </section>
+
+        <section id="results-container" class="results-container" style="display: none;">
+            <h2>Resultados do Quiz</h2>
+            <div class="score-container">
+                <div class="score-circle">
+                    <span id="final-score">0</span>%
+                </div>
+                <p>Acertos</p>
+            </div>
+
+            <div class="review-container">
+                <h3>Revisão das Respostas</h3>
+                <div id="answers-review">
+                    <!-- Review items will be inserted here via JavaScript -->
+                </div>
+            </div>
+
+            <button id="restart-quiz" class="btn">Tentar Novamente</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Guia Web. Projeto educacional.</p>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
