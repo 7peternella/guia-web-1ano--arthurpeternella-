@@ -16,6 +16,7 @@ export function initTechFilters() {
             searchInput.focus();
         }
     });
+    
 
     // Initialize animation on scroll
     const observerOptions = {
